@@ -1,0 +1,44 @@
+var iMatcher = [
+	{
+		'ace0': false,  //refers to ace heart index 0 in myarray
+		'ace1': false //refers to ace heart index 1 in myarray
+	},
+	{
+		'king0': false, //refers to king heart index 0 in myarray
+		'king1': false //refers to king heart index 1 in myarray
+	},
+	{
+		'queen0': false, //refers to queen heart in index 0 in myarray
+		'queen1': false //refers to queen heart in index 1 in myarray
+	},
+	{
+		'queen0': false,//refers to ten heart in index 0 in myarray
+		'queen1': false //refers to ten heart in index 0 in myarray
+	}
+
+];
+
+//to refer to iMatcher:
+// iMatcher[index of] : ace has an iMatcher[0] index
+		//to acess inside: iMatcher[0].0; 
+// iMatcher[index of] : king has an iMatcher[1] index
+// iMatcher[index of] : queen has an iMatcher[2] index
+// iMatcher[index of] : ten has an iMatcher[3] index
+
+
+		if(iMatcher[0].ace0 === true){
+		alert("ace[0] is true");
+		if(iMatcher[0].ace1 === true){
+		//	console.log("ace[1] is true");
+		//	console.log("You got a match!!!");
+		}
+		} 
+		if(iMatcher[1].king0 === true && iMatcher[1].king1 === true){
+			alert("You got a match!!!");
+		}
+		if(iMatcher[2].queen0 === true && iMatcher[2].queen1 === true){
+			alert("You got a match!!!");
+		}
+		if(iMatcher[3].ten0 === true && iMatcher[3].ten1 === true){
+			alert("You got a match!!!");
+		}
